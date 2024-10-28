@@ -2,6 +2,10 @@
 import Glibc
 #endif
 
+#if canImport(Darwin)
+import Darwin
+#endif
+
 /// A class that gathers information about one statement during its compilation.
 final class StatementAuthorizer {
     private unowned var database: Database
